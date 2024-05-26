@@ -37,8 +37,8 @@ Laravel es accesible, potente y proporciona herramientas requeridas para aplicac
 
 1. Clonar el repositorio:
    ```sh
-   git clone https://github.com/Sebastiancadc/sistemaNotas.git
-   cd sistemaNotas
+   git clone https://github.com/Sebastiancadc/sistemaTareas.git
+   cd sistemaTareas
 2. Instalar dependencias:
     ```sh
     composer install
@@ -55,19 +55,17 @@ Laravel es accesible, potente y proporciona herramientas requeridas para aplicac
     ```sh
     php artisan serve
 
-
-### Otro
+## Instalación
 Decisiones de Diseño
-Arquitectura Model-View-Controller (MVC): El proyecto sigue la arquitectura MVC proporcionada por Laravel para mantener una clara separación de responsabilidades.
+-Arquitectura Model-View-Controller (MVC): El proyecto sigue la arquitectura MVC proporcionada por Laravel para mantener una clara separación de responsabilidades.
 Plantillas Blade: Se utiliza el motor de plantillas Blade para generar las vistas, ofreciendo una sintaxis limpia e intuitiva.
-ORM Eloquent: Se utiliza el ORM Eloquent para interacciones con la base de datos, simplificando las operaciones CRUD y las relaciones entre modelos.
-Control de Acceso Basado en Roles (RBAC): Implementado utilizando los mecanismos de autorización integrados de Laravel para gestionar diferentes roles (admin, worker) y sus permisos.
-Soluciones Implementadas
-Autenticación de Usuarios: Implementada usando el scaffolding de autenticación de Laravel, permitiendo un inicio de sesión y registro seguro.
-Gestión de Tareas: Los usuarios pueden crear, actualizar y eliminar tareas. Las tareas se asignan a los usuarios y su estado puede ser actualizado.
-Panel de Administración: Los usuarios administradores tienen acceso para gestionar roles, usuarios y ver todas las tareas.
-Panel de Usuario: Los usuarios no administradores pueden ver y gestionar solo sus tareas asignadas.
-Manejo de Errores: Se ha implementado un manejo de errores completo para asegurar una experiencia de usuario fluida incluso en caso de errores inesperados.
-Diseño
-El diseño se hizo con Bootstrap, proporcionando un sistema responsivo y estético para la gestión de tareas.
-
+-ORM Eloquent: Se utiliza el ORM Eloquent para interacciones con la base de datos, simplificando las operaciones CRUD y las relaciones entre modelos.
+-Control de Acceso Basado en Roles (RBAC): Implementado utilizando los mecanismos de autorización integrados de Laravel para gestionar diferentes roles (admin, worker) y sus permisos.
+## Soluciones Implementadas
+-Autenticación de Usuarios: Implementada usando el spatieSpatie\Permission de autenticación de Laravel, permitiendo un inicio de sesión y registro seguro.
+-Gestión de Tareas: Los usuarios pueden crear, actualizar y eliminar tareas. Las tareas se asignan a los usuarios y su estado puede ser actualizado.
+-Panel de Administración: Los usuarios administradores tienen acceso para gestionar roles, usuarios y ver todas las tareas.
+-Panel de Usuario: Los usuarios no administradores pueden ver y gestionar solo sus tareas asignadas.
+-Manejo de Errores: Se ha implementado un manejo de errores completo para asegurar una experiencia de usuario fluida incluso en caso de errores inesperados.
+## Diseño
+-El diseño se hizo con Bootstrap, proporcionando un sistema responsivo y estético para la gestión de tareas.

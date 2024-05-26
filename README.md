@@ -1,64 +1,73 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://laravel.com" target="_blank">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
+    </a>
 </p>
 
-## About Laravel
+<p align="center">
+    <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+    <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Sobre Laravel
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Laravel es un framework de aplicaciones web con una sintaxis expresiva y elegante. Creemos que el desarrollo debe ser una experiencia agradable y creativa para ser realmente gratificante. Laravel elimina el dolor del desarrollo al facilitar tareas comunes utilizadas en muchos proyectos web, como:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Motor de enrutamiento simple y rápido](https://laravel.com/docs/routing).
+- [Contenedor de inyección de dependencias potente](https://laravel.com/docs/container).
+- Múltiples back-ends para [almacenamiento de sesiones](https://laravel.com/docs/session) y [caché](https://laravel.com/docs/cache).
+- [ORM de base de datos expresivo e intuitivo](https://laravel.com/docs/eloquent).
+- [Migraciones de esquema agnósticas de base de datos](https://laravel.com/docs/migrations).
+- [Procesamiento robusto de trabajos en segundo plano](https://laravel.com/docs/queues).
+- [Transmisión de eventos en tiempo real](https://laravel.com/docs/broadcasting).
 
-## Learning Laravel
+Laravel es accesible, potente y proporciona herramientas requeridas para aplicaciones grandes y robustas.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalación
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Prerrequisitos
 
-## Laravel Sponsors
+- PHP >= 7.3
+- Composer
+- MySQL u otra base de datos compatible
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Pasos
 
-### Premium Partners
+1. Clonar el repositorio:
+   ```sh
+   git clone https://github.com/Sebastiancadc/sistemaNotas.git
+   cd sistemaNotas
+2. Instalar dependencias:
+    ```sh
+    composer install
+3. Copiar el archivo de entorno de ejemplo y hacer los cambios de configuración necesarios en el archivo .env:
+    ```sh
+    cp .env.example .env
+4. Generar una clave de aplicación:
+    ```sh
+    php artisan key:generate
+5. Configurar la base de datos:
+    ```sh
+    php artisan migrate --seed
+6. Ejecutar el servidor de desarrollo:
+    ```sh
+    php artisan serve
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+### Otro
+Decisiones de Diseño
+Arquitectura Model-View-Controller (MVC): El proyecto sigue la arquitectura MVC proporcionada por Laravel para mantener una clara separación de responsabilidades.
+Plantillas Blade: Se utiliza el motor de plantillas Blade para generar las vistas, ofreciendo una sintaxis limpia e intuitiva.
+ORM Eloquent: Se utiliza el ORM Eloquent para interacciones con la base de datos, simplificando las operaciones CRUD y las relaciones entre modelos.
+Control de Acceso Basado en Roles (RBAC): Implementado utilizando los mecanismos de autorización integrados de Laravel para gestionar diferentes roles (admin, worker) y sus permisos.
+Soluciones Implementadas
+Autenticación de Usuarios: Implementada usando el scaffolding de autenticación de Laravel, permitiendo un inicio de sesión y registro seguro.
+Gestión de Tareas: Los usuarios pueden crear, actualizar y eliminar tareas. Las tareas se asignan a los usuarios y su estado puede ser actualizado.
+Panel de Administración: Los usuarios administradores tienen acceso para gestionar roles, usuarios y ver todas las tareas.
+Panel de Usuario: Los usuarios no administradores pueden ver y gestionar solo sus tareas asignadas.
+Manejo de Errores: Se ha implementado un manejo de errores completo para asegurar una experiencia de usuario fluida incluso en caso de errores inesperados.
+Diseño
+El diseño se hizo con Bootstrap, proporcionando un sistema responsivo y estético para la gestión de tareas.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

@@ -55,7 +55,6 @@ Laravel es accesible, potente y proporciona herramientas requeridas para aplicac
     ```sh
     php artisan serve
 
-## Instalación
 ### Decisiones de Diseño
 - Arquitectura Model-View-Controller (MVC): El proyecto sigue la arquitectura MVC proporcionada por Laravel para mantener una clara separación de responsabilidades.
 Plantillas Blade: Se utiliza el motor de plantillas Blade para generar las vistas, ofreciendo una sintaxis limpia e intuitiva.
@@ -68,4 +67,4 @@ Plantillas Blade: Se utiliza el motor de plantillas Blade para generar las vista
 - Panel de Usuario: Los usuarios no administradores pueden ver y gestionar solo sus tareas asignadas.
 - Manejo de Errores: Se ha implementado un manejo de errores completo para asegurar una experiencia de usuario fluida incluso en caso de errores inesperados.
 ## Diseño
--El diseño se hizo con Bootstrap, proporcionando un sistema responsivo y estético para la gestión de tareas.
+- El diseño se hizo con Bootstrap, proporcionando un sistema responsivo y estético para la gestión de tareas.
